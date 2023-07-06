@@ -2,6 +2,13 @@ from configparser import ConfigParser
 
 
 def config(filename="database.ini", section="postgresql"):
+    """
+    Функция для чтения конфигурационного файла database.ini и возврата параметров базы данных.
+
+    :param filename: имя файла конфигурации (по умолчанию "database.ini").
+    :param section: имя раздела в файле конфигурации (по умолчанию "postgresql").
+    :return: словарь с параметрами базы данных.
+    """
     # Создание парсера
     parser = ConfigParser()
     # Чтение файла конфигурации

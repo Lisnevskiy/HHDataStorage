@@ -1,6 +1,6 @@
 from config import config
 from constants import EMPLOYERS, HEAD_HUNTER_DB
-from utils import create_database, save_data_to_database
+from src.utils import create_database, save_data_to_database
 from src.db_manager import DBManager
 from src.hh_api import HeadHunterAPI
 from src.vacancy import Vacancy
